@@ -1,0 +1,310 @@
+
+/* only screen and (min-width : 285px) and (max-width : 800px)
+ 
+----------------------------------------------------------------------------------------------------*/
+@media (min-width:230px) and (max-width:799px) {
+
+/* common
+----------------------------------------------------------------------------------------------------*/
+
+body { overflow-y: scroll; background: #fff;}
+.container{width:100%; margin:0 auto; position: relative; display: block; clear: both; overflow-x:hidden; }
+.container2{width:100%; margin:0 auto; position: relative; display: block; clear: both; overflow-x:hidden;}
+.contents{width:90%; max-width: 700px; position: relative; display: block; clear: both; margin:auto; overflow:hidden; }
+.txc-image{width:100%}
+
+
+
+.col01{width:100% !important; display: block; clear: both;}
+.col02{width:95% !important; display: block; clear: both;vertical-align: top;}
+.col03{width:95% !important; display: block; clear: both;vertical-align: top;}
+.col02_pd{padding:0 1%; width:95% !important;display: block; clear: both; vertical-align: top;}
+
+br{display:block;}
+.m_block{display: block !important;}
+.m_none{display: none !important;}
+
+p{font-size:14px;font-weight: normal;line-height:20px; color: #666; display: block;}
+h2{font-weight: normal; font-size: 28px; line-height: 30px; min-height: 1px;}
+h3{font-weight: 100; font-size: 25px; line-height: 34px; min-height: 1px;}
+h4{font-weight: normal; font-size: 18px; line-height: 24px; min-height: 1px;}
+h5{font-weight: normal; font-size: 16px; min-height: 1px;}
+
+
+/* mobile navigation gnb 
+----------------------------------------------------------------------------------------------------*/
+
+/* header */
+#headerWrap{width:100%;height:70px;position:fixed;left:0;top:0;z-index: 100;}
+#headerWrap:hover{box-shadow:0; opacity: 1;}
+#headerWrap h1{position: absolute; left:50%; margin-left: -90px; top:12px; z-index:101}
+#headerWrap h1 img{width:180px; height:35px;}
+
+#header>#gnb{display: none;}
+
+/* �ㅽ겕濡� 怨좎젙gnb */
+#headerWrap.dfix{width:100%;height:70px; position:fixed;left:0;top:0;z-index: 100; }
+
+	
+#header .small_menu_open{display:block; position:absolute; z-index:100; left:20px; top:20px;}
+#header .small_menu_close{display:none; position:absolute; z-index:201; left:280px; top:20px;}
+	
+#headerWrap #topLink{ display: none;}
+	
+#header .left_menu{ display:block;}
+#footer .footer-menu-area li{width:25%; padding:0; margin-left: -4px;}
+#footer .footer-menu-area li a{font-size: 13px; letter-spacing: -0.5px;}
+#footer h1{margin:10px auto 10px;}
+#footer h1 img{width:180px;}
+#footer address{font-size:12px; line-height: 18px;}
+
+
+/* �쒕툕硫붾돱  
+----------------------------------------------------------------------------------------------------*/
+
+.smenu-container{border-bottom: 0 solid #e7e7e7; background: #fff; min-height: 60px; width:auto; margin:10px 10px 0;}
+.smenu-container .smenu{width:100%; margin:0 auto; min-height: 35px; text-align: center; position: relative}
+.smenu-container .smenu li{float:left; line-height: 35px; border: 1px solid #e7e7e7; margin-left: -1px; margin-top:-1px; text-align: center; background: #f2f2f2; overflow: hidden; position: relative; overflow: hidden;}
+.smenu-container .smenu li a{color: #929292; font-size: 13px; display: block; width: 100%; height: 100%;}
+.smenu-container .smenu li.on, .smenu li:hover{background: #333}
+.smenu-container .smenu li.on a, .smenu li:hover a{color: #fff;}
+
+.smenu-container .col-3 li{width:33%}
+.smenu-container .col-2 li{width:49%}
+
+
+
+/* contents layout
+----------------------------------------------------------------------------------------------------*/
+
+/* sub visual */
+.visual-cover{position:relative;height:300px; width:100%; display: block; overflow: hidden; background-position: center center; background-size: cover;}
+
+
+.visual-cover .visual-step1{position:relative;display:block;min-height:300px; height:100%; width:100%; background:url("../images/common2018/visual01.jpg") no-repeat center center;    
+		-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.visual-cover .txt{position:absolute;width:80%; top:25%; left:10%; }
+.visual-cover .txt span.sort h2{font-size: 30px; line-height: 36px;}
+.visual-cover .txt span.sort p{font-size: 13px; line-height: 18px; margin-top: 10px;}
+.visual-cover .txt span.sort br{display: none;}
+
+/* title */
+.title{text-align: center; padding:40px 0 30px;}
+.title h2{font-size: 28px; line-height: 33px;}
+.title p{font-size: 13px; margin-top:5px;}
+
+/* Sub path */
+.path{width:100%;margin-top:10px; text-align: center;}
+
+
+
+
+/* contents
+----------------------------------------------------------------------------------------------------*/
+
+.content{position: relative; font-size: 12px; color: #666; padding:auto 10px; vertical-align: top; width:95%}
+.content p{font-size: 13px; color: #888; display: block; line-height: 18px;}
+.content h2{font-size: 18px; font-family: 'futura-pt',sans-serif;font-weight: normal; color: #000; min-height: 1px; line-height: 23px;}
+.content h3{font-size: 35px; font-family: 'futura-pt',sans-serif;font-weight: lighter; color: #ccc; min-height: 1px; line-height:35px}
+
+.sec50{width:100%; display: block; vertical-align: top; margin:10px auto}
+.sec30{width:100%; display: block; vertical-align: top}
+.wrap-pd80{padding: 30px 0 !important;}
+
+
+
+/* intro */
+.introDIV_01{margin-top:50px; width:100%;}
+.introDIV_02{position: relative; right:0; top:0; width:100%}
+
+
+/* history */
+.history01{height:153px;}
+.history02{background: none; }
+.history02 ul{padding-top:60px;}
+.history02 .item1{width:90%; position: relative; margin:20px auto;}
+.history02 .item2{width:90%; margin:20px auto; position: relative;}
+
+
+.history02 li h1{font-size: 20px;}
+.history02 li h2{font-size: 120px; color: #f7f7f7; font-weight: bold; top:-30px; position: absolute; z-index: -1}
+.history02 li p{font-size: 13px; line-height: 20px; position: relative; padding:3px 0; width:90%; vertical-align: top}
+.history02 li em{color: #000; width:35px; margin-left:0;}
+.history02 li span{position: absolute;width:0; height: 0;background: none;}
+
+
+.history02 .left span{ right:-6px; top:16px; }
+.history02 .left h1{text-align: left; margin-right:0;}
+.history02 .left h2{left:0}
+.history02 .left p{text-align: left; margin-left:0; }
+
+
+.history02 .right span{background: none; left:-6px; top:16px; }
+.history02 .right h1{text-align: left; margin-left:0;}
+.history02 .right h2{right:0 }
+.history02 .right p{text-align: left; margin-left:0;} 
+
+
+
+
+/* GFC �띾낫�� */
+.press01{width:100%; margin:inherit auto}
+.press01 h3{font-size: 21px;color: #fff; font-family: "futura-pt",sans-serif; font-weight: lighter; letter-spacing: 1px; line-height: 20px;}
+.press01 h2{font-size: 30px; color: #fff; font-family: "futura-pt",sans-serif; font-weight: lighter; letter-spacing: 1px; line-height: 30px; }
+.press01 p{color: #fff; margin-top:10px;}
+
+
+.press02{min-height: 820px;width:100%; }
+.press02 li{width:100%; display: block; margin:0 auto; text-align: center}
+.press02 li a{display: block; height: 400px; width:100%; color: #fff; text-align: center}
+
+
+
+.press03{width:100%; text-align: center; margin-top:50px; min-height: 225px;}
+.press03 h3, .press03 h2{color:#000;}
+.press03 p{color: #888888; margin-bottom: 40px;}
+.press03 li{width:95%; height: 225px; float: left; position: relative; background-size: cover; display: block; margin-left:2.5%}
+
+
+/* location */
+.locDIV01{margin-top:30px;}
+
+
+/* mall 移댄뀒怨좊━ */
+.mall-cate{ width:100%; min-height: 140px; display: block; margin-left:1px; margin-top:-20px;clear: both; position: relative; }
+.mall-cate li{float: left; width: 50%; min-height: 30px; display: inline-block; box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box; margin:-1px 0 0 -1px; }
+.mall-cate li a{font-size: 14px;}
+
+/* mall visual */
+.mall-visual{width:100%; max-width:1200px; height: 317px; position: relative; clear: both; margin-top:30px; display: block;}
+.mall-visual .txt{width:100%; height: 120px; position: absolute; right:0; bottom:0;background: #000; opacity: 0.8; }
+.mall-visual .txt h2{font-size: 25px; letter-spacing: 4px; color: #d2ae7f; font-weight: normal; margin-top:30px;}
+.mall-visual .txt p{font-size: 15px; color: #fff}
+
+
+/* mall view */
+.mall-view-img{width:100%; padding-top:30px;}
+
+.mall-title{margin:35px auto; text-align: center;}
+.mall-title h2{font-size: 16px; line-height: 25px;}
+.mall-title h1{font-size: 25px; line-height: 30px; margin-top:10px;}
+.mall-title p{font-size: 16px;}
+
+.mall-info-area{padding:50px 0; margin:0 auto;}
+.mall-info{width:90%; display: block; margin:0 auto;clear: both; }
+.mall-info h2{font-size: 20px; letter-spacing: 3px; font-weight: lighter; color: #000; text-align: center; margin-top:15px;}
+.mall-info .mall-logo{display: block; width:100%; text-align: center }
+.mall-info ul{display: block; width:100%; margin-top:20px; clear: both;}
+
+.mall-intro {width:90%; display: block; margin:0 auto;padding-top:60px;clear: both;}
+
+
+.mall_con1{width:90%; display: block; margin:0 auto;padding-top:30px;clear: both;}
+.mall_con2{width:90%; display: block; margin:0 auto;padding-top:30px;clear: both;}
+
+
+.mall-map-area{margin:30px auto 0;}
+.mall-map{width:100%; margin:0 auto; }
+.mall-map .floor{width:100%; display: block;font-size: 40px; margin-top:0; }
+.mall-map .mall-map-list { width:100%; display: block; }
+.mall-map .mall-map-list li{line-height: 20px; float: left; width:50%; vertical-align: top; display: inline-block;}
+.mall-map .mall-map-list a{padding-left:20px; color: #666;}
+.mall-map .plan{display: block; clear: both; position: relative;}
+.mall-map .plan img{width:100%; max-width: 934px}
+
+
+
+.mall-new{background:#e9eaee url('../images/mall2018/mall_new_bg.png') no-repeat top center; background-size:cover; margin:30px 0 0; min-height: 925px; padding:50px 0 30px; text-align: center;}
+.mall-new h4{font-size: 16px;}
+.mall-new h2{font-size: 25px;}
+.mall-new .new-item{}
+.mall-new .new-item .item{display: inline-block; width:300px; min-height: 505px; margin-right:0; margin-bottom: 20px; }
+.mall-new .new-item .item .ico_new{width:50px; height: 50px; background-size: 50px; }
+.mall-new .new-item .item .ico_event{width:50px; height: 50px; background-size: 50px; }
+.mall-new .new-item .item .item_img{width:302px;}
+.mall-new .new-item .item .item_img img{width:100%;}
+.mall-new .new-item .item .item_con{padding:255px 20px 20px;}
+.mall-new .new-item .item .item_con h5{margin-top:10px;}
+.mall-new .new-item .item .item_con .more{margin-top:10px;}
+.mall-new .mall_com{margin:30px auto; clear: both; display: block; }
+.mall-new .mall_com li{display: inline-block; margin:5px; }
+
+
+
+/* 媛ㅻ윭由� */
+.gallery01{margin-top:0px; margin-left:0px; margin-right:0px; height: auto}
+.gallery01 li{width:49%; min-width: 49%; height: 200px; margin:0.5%; display: inline-block; float: left;}
+.gallery01 li.big{width:100%; height: 300px;}
+.gallery01 li.gal09{top:0;}
+.gallery01 li.gal10{top:0;}
+
+.gallery01 .wall_over h2{padding-top:25%; font-size: 18px; line-height: 23px;}
+
+
+
+/* 二쇱슂�낆＜�낆껜�뚭컻 */
+.occup01{width:100%; display: inline-block; vertical-align: top}
+.occup01 li .floor{left: 80%; top:20px}
+
+
+/* 寃뚯떆臾� 寃��� */
+.ListSearch{text-align: center;}
+
+
+/* �대깽�� 寃뚯떆�� */
+.BBSList02{margin-top: 5px;margin-bottom: 15px; width: 100%;}
+.BBSList02 li{padding:20px 0;width:100%; min-height:50px; border-bottom: 1px solid #e5e5e5; position: relative; float: left}
+.BBSList02 li .item{display: none; overflow: hidden}
+.BBSList02 li strong{margin-left:0;top:20px; width: 100%;display: block; }
+.BBSList02 li p{margin:5px 0 5px 0;width: 100%;display: block;}
+
+
+
+
+/* sitemap */
+.sitemap{text-align: center; margin:0 auto 50px; width: 80%; }
+.sitemap .site-lnb{width:100%; display: inline-block; *float:left; text-align: left; vertical-align: top; margin-bottom: 30px;}
+.sitemap .site-lnb a{font-size: 20px; text-align: left; }
+.sitemap li .lnb_sub{}
+.sitemap li .lnb_sub li{display: block; margin:0}
+.sitemap li .lnb_sub li a{font-size: 13px; color: #888; line-height: 23px; text-align: left}
+
+
+/* member */
+
+.login{width:90%; margin:0 auto 0; }
+
+
+
+
+
+/* 荑좏룿議� */
+.BBSarray{width:100%;display: block; margin:30px auto 0;}
+.BBSarray li{line-height: 50px;padding:0 5%; }
+.BBSarray a{font-size: 18px;}
+
+.BBScate{width:100%; display: block; padding: 30px 0;text-align: center;}
+.BBScate a{font-size: 13px;padding: 5px 8%;margin:3px 1px; }
+
+.BBSList03 li{margin:10px 1.1%; box-shadow: 5px 5px 5px rgba(0,0,0,0.14)}
+
+.BBSList03.grid3 > li{width:47.5%;}
+.BBSList03.grid2 > li{width:47.5%;}
+
+.BBSList03 li .ico{width:30px; height: 30px; display: block;}
+.BBSList03 li .ico.new{background-size: 30px; }
+.BBSList03 li .ico.hit{background-size: 30px; }
+.BBSList03 li .txt {height: 90px; padding:40px 0 20px;}
+.BBSList03 li .txt .like{right: 8px; top:8px; width:20px; height: 20px; background-size:15px; padding-left:15px; }
+.BBSList03 li .txt h3{font-size: 14px; line-height: 18px; }
+.BBSList03 li .txt .store{font-size: 12px; margin-top:8px;}
+.BBSList03 li .txt .date{margin-top:8px;font-size: 12px;}
+
+
+
+}

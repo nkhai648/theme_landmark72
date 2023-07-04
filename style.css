@@ -1,0 +1,20 @@
+/*
+ * Theme Name: landmark Theme 2023 
+ * Description: Theme đơn giản trong lập trình theme
+ * Theme URI: http://landmark.com
+ * Version: 1.0
+ * Author: Landmark 72
+ * Author URI: http://landmark72.kvit.vn
+ * Tags: basic
+ * Textdomain: landmark
+ * Languages Folder: /languages 
+*/
+
+@import url("./reset.css");
+@import url("./css2018/common.css");
+@import url("./css2018/layout.css");
+@import url("./css2018/main.css");
+@import url("./css2018/480.css");
+@import url("./css2018/1024.css");
+@import url("./css2018/1280.css");
+

@@ -1,0 +1,297 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    
+	    /*font-size: 14px;*/
+	    font-family: 'NanumSquare', 'Malgun Gothic', '留묒� 怨좊뵓',"�뗭�", Verdana,sans-serif;
+	    vertical-align: baseline;
+	}
+	
+/* HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {	display: block;}
+/*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+
+
+/* html Reset
+----------------------------------------------------------------------------------------------------*/
+
+ol,ul,li { list-style: none }
+html { height: 100% }
+body {
+	    line-height: 1.6;
+	    font-style: normal;
+	    font-size: 14px;
+	    color: #888;
+	    height: 100%;
+	    letter-spacing: ;
+	    text-rendering: optimizeLegibility;
+	    background-color: #fff;
+
+	}
+
+/* bold Reset
+----------------------------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 { font-weight:normal;} 
+b,strong {
+/*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/  
+	font-weight: bold;}
+
+
+/* img Reset
+----------------------------------------------------------------------------------------------------*/
+
+image, img {color: transparent;font-size: 0;border:0;vertical-align: middle;
+	/*
+	For IE.
+	http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+	*/
+	-ms-interpolation-mode: bicubic;
+}
+
+/* list Reset
+----------------------------------------------------------------------------------------------------*/
+
+li {
+/*For IE6 + IE7.*/
+display: list-item;list-style: none;
+}
+
+/* board Reset
+----------------------------------------------------------------------------------------------------*/
+
+table {border-collapse: collapse;border-spacing: 0;}
+th,td,caption {font-weight: normal;vertical-align: top;text-align: left;}
+q {quotes: none;}
+q:before,q:after {content: '';content: none;}
+sub,sup,small {font-size: 75%;}
+sub,sup {line-height: 0;position: relative;vertical-align: baseline;}
+sub {bottom: -0.25em;}
+sup {top: -0.5em;}
+svg {overflow: hidden;} /* For IE9.*/
+
+
+/* link Reset
+----------------------------------------------------------------------------------------------------*/
+
+a{color:inherit;text-decoration:none}
+a:active, a:hover{text-decoration:none; color: #666}
+a:link, a:visited {text-decoration:none}
+
+
+input[type=button],
+input[type=submit],
+button{-webkit-appearance:none;cursor:pointer;}
+*:focus { outline:none;}
+input [type="checkbox"] {width:20px;display: inline-block;}
+input [type="radio"]{display: inline-block; width: 20px; height: 25px;  line-height: 25px; z-index: 10}
+
+/* form Reset
+----------------------------------------------------------------------------------------------------*/
+
+fieldset {border: 0 none;margin: 0px;padding: 0px;}
+input {font-size: 100%;vertical-align: middle;border: #ccc 1px solid #e4e4e4;}
+
+textarea {font-size: 100%;padding: 0;border: 1px solid #696969;}
+.input{border: #ccc 1px solid;vertical-align: middle;font-size: 14px ;height: 20px; padding:10px;}
+.input_border{border: #ccc 1px solid; vertical-align: middle;font-size: 14px ; height: 30px; padding:8px;}
+
+/* etc Reset
+----------------------------------------------------------------------------------------------------*/
+
+address, caption, cite, code, dfn, em, th, var {font-style : normal;font-weight : normal;}
+br { letter-spacing: 0;}
+
+
+.clfix:after { content: "."; display: block; height: 0px; clear: both; visibility: hidden; }	
+.clfix { display: inline-block; }	
+.clfix { display: block;}
+
+.fl { float: left; _display: inline}
+.fr { float: right; }
+.tc { text-align: center}
+.tct20 { text-align: center;margin-top: 10px}
+.clearing { clear: both; }
+.hiding { display: none; }
+.show { display: block ; }
+.center{margin:0 auto; text-align: center;}
+.left{text-align: left}
+.right{text-align: right}
+.png24 {tmp:expression(setPng24(this));}
+
+.blind {position:absolute; top:0; left:0;width:0px; height:0px; overflow:hidden; visibility:hidden; font-size:0; line-height:0;}
+select{height:20px;}
+
+.ellip {max-height:24px;/* height:24px; */display:block;display:-webkit-box;-webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; text-overflow:ellipsis; white-space: nowrap; }
+
+
+/* drag color Reset
+----------------------------------------------------------------------------------------------------*/
+
+::selection {
+    background:#d9d9d9;
+    color: #FFF;
+    text-shadow: none;
+}
+::-moz-selection {
+    background:#d9d9d9;
+    color: #FFF;
+    text-shadow: none;
+}
+::-webkit-selection {
+    background:#d9d9d9;
+    color: #FFF;
+    text-shadow: none;
+}
+
+
+/* Skip Menu
+----------------------------------------------------------------------------------------------------*/
+.skipMenu {position:fixed; top:0; left:0; width:100%; z-index:99999;}
+.skipMenu a{height:1px; color:transparent; display:block; color:#333; font-size: 0}
+.skipMenu a:focus, 
+.skipMenu a:active {height:auto; padding:7px 0 10px; background-color:#000; color:#fff; text-decoration:none; font-weight:bold; text-align:center; _float:left; font-size:16px;}
+	
+	
+/* button btn
+----------------------------------------------------------------------------------------------------*/
+	
+.btn { font-size: 16px;	text-transform: uppercase; font-weight: normal;position: relative;	border: none; padding: 10px 40px;display: block; }
+.btn.text-left {text-align: left}
+.btn:after {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0;
+	z-index: 1;
+	background: transparent;
+	-webkit-transition: -webkit-transform .2s, opacity .2s;
+	-moz-transition: -moz-transform .2s, opacity .2s;
+	transition: transform .2s, opacity .2s;
+}
+.btn:hover {text-decoration: none; }
+.btn:hover:after {opacity: 1}
+.btn.btn-black {background: #000;	color: #fff}
+.btn.btn-black:hover {	background: #1e1e1e !important;}
+.btn.btn-black:after {	border: solid 2px #1e1e1e;}
+.btn.btn-inline {	display: inline-block;	vertical-align: top}
+.btn.btn-grey {	background: #999999;	color: #fff;border: solid 2px #999999}
+.btn.btn-grey.no-border:after {	border: none}
+.btn.btn-grey:hover {	color: #fff}
+.btn.btn-dark {	background: #1e1e1e;color: #fff;border: solid 2px #383838}
+
+.btn.btn-transparent {font-size: 16px; color: #333;	border: 2px solid #666666; background: transparent;}
+.btn.btn-transparent:after {	border: solid 3px #666666}
+.btn.btn-transparent2 {color: #fff;	border: 2px solid #b3b3b3; background: transparent;}
+.btn.btn-transparent2:after {	border: solid 3px #fff}
+.btn.btn-white {background: transparent;	border: 2px solid #cccccc; color: #888; font-weight: 600;}
+.btn.btn-white:after {	border: solid 2px #1e1e1e}
+.btn.btn-white.no-border:after {border: none}
+.btn.btn-white-thick{	background: transparent;	border: 1px solid #fff;	border-radius: 0;	color: #fff; font-weight: 600;}
+.btn.btn-white-thick:after {	border: solid 3px #fff}
+.btn.btn-white-thick.no-border:after {	border: none}
+
+.btn.btn-blue {	background: #0081c4;	color: #fff;}
+.btn.btn-blue:hover {	color: #fff; background: #0391db;}
+
+.btn.btn-grey-thick {	background: transparent; color: #666666; border:3px solid #9d9d9d; }
+.btn.btn-grey-thick:hover {	border:3px solid #000;}
+
+
+a.btn {	text-decoration: none !important}
+button:focus {outline: 0 !important}
+.btn.btn-100{width:100%}
+.btn.btn-50{width:49%}
+.btn-center{margin:0 auto; text-align: center}
+.btn.btn-inline{display: inline-block;}
+.btn img{margin-right:10px;}
+
+.btn-mini{font-size: 13px;text-transform: uppercase; font-weight: normal; color: #888;	text-align: center;	padding:5px 10px;	text-decoration: none;	position: relative; background: #fff; border:2px solid #ccc;}
+.btn-mini:hover {	background: #f2f2f2;}
+.btn-mini.btn-mini-dark{background: #333; color: #fff;border: none;}
+.btn-mini.btn-mini-dark:hover{background: #000;}
+.btn-mini.btn-mini-white{background: #fff; color: #000; border:2px solid #000}
+
+.btnarea{width:100%; min-height: 45px; margin:20px auto; text-align: center; display: block; clear: both; position: relative;}
+
+	
+/*---------------------------------- COMMON ----------------------------------*/
+
+.c_point{color: #a96025;}
+.c_black{color: #000;}
+.c_white{color: #fff !important;}
+
+.block{display: block}
+.mt100{margin-top:100px !important}
+.mt90{margin-top:90px !important}
+.mt80{margin-top:80px !important}
+.mt70{margin-top:70px !important}
+.mt60{margin-top:60px !important}
+.mt50{margin-top:50px !important}
+.mt40{margin-top:40px !important}
+.mt30{margin-top:30px !important}
+.mt20{margin-top:20px !important}
+.mt10{margin-top:10px !important}
+.mt5{margin-top:5px !important}
+.mt0{margin-top:0px !important}
+
+.mb100{margin-bottom:100px}
+.mb90{margin-bottom:90px}
+.mb80{margin-bottom:80px}
+.mb70{margin-bottom:70px}
+.mb60{margin-bottom:60px}
+.mb50{margin-bottom:50px}
+.mb40{margin-bottom:40px}
+.mb30{margin-bottom:30px}
+.mb20{margin-bottom:20px}
+.mb10{margin-bottom:10px}
+.mb5{margin-bottom:5px}
+.mb0{margin-bottom:0px}
+
+
+.pt80{padding-top: 80px}
+.pt70{padding-top: 70px}
+.pt50{padding-top: 50px}
+.pt40{padding-top: 40px}
+.pt30{padding-top: 30px}
+.pt20{padding-top: 20px}
+.pt10{padding-top: 10px}
+.pl10{padding-left: 10px}
+.pl20{padding-left: 20px}
+.pl30{padding-left: 30px}
+.pl50{padding-left: 50px}
+.pl90{padding-left: 90px}
+.ml10{margin-left: 10px}
+.ml20{margin-left: 20px}
+.ml30{margin-left: 30px}
+.ml50{margin-left: 50px}
+.ml60{margin-left: 60px}
+.ml70{margin-left: 70px}
+.ml80{margin-left: 80px}
+.ml90{margin-left: 90px}
+
+.txc-image{max-width:100%}
+
