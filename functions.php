@@ -45,9 +45,6 @@ if(!function_exists('landmark_theme_setup')) {
         );
         add_theme_support('custom-background', $default_background);
 
-        // Thêm menu 
-        register_nav_menu('primary-menu', __('Primary Menu', 'landmark'));
-
         // Thêm sidebar 
         $sidebar = array(
             'name' => __('Main Sidebar', 'landmark'),
@@ -62,180 +59,54 @@ if(!function_exists('landmark_theme_setup')) {
     add_action('init', 'landmark_theme_setup');
 }
 
-// Template header function 
-if(!function_exists('landmark_header')) {
-    function landmark_header() { ?>
-        <div class="skipMenu" title="스킵 메뉴">
-			<a href="#gnb">메뉴 바로가기</a>
-			<a href="#contents">본문 내용 바로가기</a>
-		</div>
-
-		<!-- PC gnb -->
-		<div id="headerWrap">
-			<h1><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="강남파이낸스센터 메인 바로가기" /></a></h1>
-
-			<div id="header">
-
-				<ul id="gnb">
-					<li class="m1"><a href="#intro2023" class="">Introduce</a>
-						<ul>
-							<li><a href="#intro2023" class="">About</a></li>
-							<li><a href="#history2023" class="">Vision</a></li>
-							<li><a href="#gallery2023" class="">Location</a></li>
-						</ul>
-					</li>
-
-					<li class="m2"><a href="#mall-main2023" class="">Floor Information</a>
-					</li>
-
-					<li class="m3"><a href="#community/bbs2023" class="">Facilities</a>
-						<ul >
-							<li><a href="#community/bbs2023" class="">Entertainment & Tours</a></li>
-							<li><a href="#enjoy/event2023" class="">Culture & Entertainment</a></li>
-							<li><a href="#community/festival2023" class="">Food & Baverage</a></li>
-							<li><a href="#community/festival2023" class="">Health & Gym</a></li>
-							<li><a href="#community/festival2023" class="">Education</a></li>
-							<li><a href="#community/festival2023" class="">Beauty & Shopping</a></li>
-							<li><a href="#community/festival2023" class="">Banking</a></li>
-							<li><a href="#community/festival2023" class="">Living Area</a></li>
-							<li><a href="#community/festival2023" class="">Office Area</a></li>
-							<li><a href="#community/festival2023" class="">Parking Area</a></li>
-						</ul>
-					</li>
-
-					<li class="m4"><a href="#service/" target="_blank">Event</a>
-					</li>
-
-					<li class="m5"><a href="#tenant/comlist2023" class="">Office</a>
-						<ul>
-							<li><a href="#tenant/information2023" class="">Tenants</a></li>
-							<li><a href="#tenant/comlist2023" class="">Office Review</a></li>
-							<li><a href="#tenant/comlist2023" class="">Leasing Information</a></li>
-						</ul>
-					</li>
-					<li class="m6"><a href="#tenant/comlist2023" class="">Retail Mall</a>	
-					</li>
-					
-					<li class="m7"><a href="#tenant/comlist2023" class="">Tenant Conner</a>	
-					</li>
-
-				</ul>
-
-				<!-- mobile menu icon -->
-				<div class="hd_categoty">
-					<a href="javascript:;" onclick="toggleMenuWrap('open');" class="small_menu_open"><img
-							src="<?php echo get_template_directory_uri(); ?>/img/btn_small_menu.png" alt="MENU" /></a>
-					<a href="javascript:;" onclick="toggleMenuWrap('close');" class="small_menu_close"><img
-							src="<?php echo get_template_directory_uri(); ?>/img/btn_close2.png" alt="close" /></a>
-				</div>
-				<!--// mobile menu icon -->
-
-				<!-- mobile left_navi -->
-				<div class="menu_wrap">
-					<div class="menu_inner">
-						<!--// menu_wrap -->
-
-						<!-- left_navi -->
-						<div class="left_menu">
-
-							<ul class="m_topmenu clearfx">
-								<li><a href="#mall-main2023">MALL</a></li>
-								<li><a href="#location2023">LOCATION</a></li>
-								<li class="last"><a href="#eng/index.asp">ENGLISH</a></li>
-							</ul>
-
-							<ul class="lnb">
-								<li class="lnb_menu01">
-									<a href="">Introduce</a>
-									<ul class="lnb_sub">
-										<li><a href="#intro2023">About</a></li>
-										<li><a href="#history2023">Vision</a></li>
-										<li><a href="#gallery2023">Location</a></li>
-									</ul>
-								</li>
-								
-								<li class="lnb_menu02">	                                    
-									<a>Floor Information</a>
-								</li>	
-
-								<li class="lnb_menu03">
-									<a href="">Facilities</a>
-									<ul class="lnb_sub">
-										<li><a href="#mall-main2023">Entertainment & Tours</a></li>
-										<li><a href="#enjoy/mallevent2023">Culture & Entertainment</a></li>
-										<li><a href="#mall/recom2023">Food & Baverage</a></li>
-										<li><a href="#mall/recom2023">Health & Gym</a></li>
-										<li><a href="#mall/recom2023">Education</a></li>
-										<li><a href="#mall/recom2023">Beauty & Shopping</a></li>
-										<li><a href="#mall/recom2023">Banking</a></li>
-										<li><a href="#mall/recom2023">Living Area</a></li>
-										<li><a href="#mall/recom2023">Office Area</a></li>
-										<li><a href="#mall/recom2023">Parking Area</a></li>
-									</ul>
-								</li>
-								<li class="lnb_menu04">
-									<a href="">Event</a>
-									<ul class="lnb_sub">
-										<li><a href="#community/bbs2023">Event</a></li>
-										<li><a href="#enjoy/event2023">News</a></li>
-									</ul>
-								</li>
-								<li class="lnb_menu05">
-									<a href="service/">Office</a>
-									<ul class="lnb_sub">
-										<li><a href="#community/bbs2023">Tenants</a></li>
-										<li><a href="#enjoy/event2023">Office Review</a></li>
-										<li><a href="#enjoy/event2023">Leasing Information</a></li>
-									</ul>
-								</li>
-								<li class="lnb_menu06">
-									<a href="#tenant/comlist2023">Retail Mall</a>
-								</li>
-								<li class="lnb_menu07">
-									<a href="#tenant/comlist2023">Tenant Conner</a>
-									<ul class="lnb_sub">
-										<li><a href="#tenant/information2023">Notice board</a></li>
-										<li><a href="#tenant/comlist2023">Inbox</a></li>
-										<li><a href="#tenant/comlist2023">Contact</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<!--// left_navi -->
-
-					</div>
-				</div>
-				<!-- mobile left_navi -->
-
-			</div>
-
-			<ul id="topLink">
-				<li><a href="#" class="">KOR</a></li>
-				<li><a href="#eng/" class="">ENG</a></li>
-				<li><a href="#eng/" class="">VIE</a></li>
-
-				<li><a href="#service/" class="login">로그인</a></li>
-
-			</ul>
-		</div>
-		<!-- PC gnb -->
-        <?php
-    }
-}
 
 
 // Thiet lap menu 
-if(!function_exists('landmark_menu')) {
-    function landmark_menu($menu) {
-        $menu = array(
-            'theme_location' => $menu,
-            'container' => 'nav',
-            'container_class' => $menu,
-            'items_wrap' => '<ul id="%1$s" class="%2$s sf-menu">%3$s</ul>'
-        );
-        wp_nav_menu($menu);
-    }
+function register_my_menu() {
+    register_nav_menu('header-menu',__( 'Menu chính' ));
+    register_nav_menu('footer-menu',__( 'Menu Footer' ));
 }
+add_action( 'init', 'register_my_menu' );
+
+
+// Đệ quy get ra sub-menu item của menu 
+function get_menu_items_recursive($menu_items, $parent_id = 0) {
+    $menu = array();
+    
+    foreach ($menu_items as $item) {
+        if ($item->menu_item_parent == $parent_id) {
+            $menu_item = (array) $item;
+            $menu_item['children'] = get_menu_items_recursive($menu_items, $item->ID);
+            $menu[] = $menu_item;
+        }
+    }
+    
+    return $menu;
+}
+
+function generate_menu_html($menu_items, $el_ul) {
+    if($el_ul == true) {
+        $html = '<ul id="gnb">';
+    }else {
+        $html = '<ul>';
+    }
+    
+    foreach ($menu_items as $key => $item) {
+        $html .= '<li class="'.($key+1).'">';
+        $html .= '<a href="' . $item['url'] . '">' . $item['title'] . '</a>';
+        
+        if (!empty($item['children'])) {
+            $html .= generate_menu_html($item['children'], false);
+        }
+        
+        $html .= '</li>';
+    }
+    
+    $html .= '</ul>';
+    
+    return $html;
+}
+
 
 // Tao phan trang 
 if(!function_exists('landmark_pagination')) {

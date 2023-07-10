@@ -15,21 +15,7 @@
     </div>
 
 	</div>
-	<!-- //wrap -->
-	<script>
-		// document.querySelector('.ico_more').addEventListener('click', () => {
-		// 	const element = document.getElementById('section1');
-		// 	let offset = 85;
-		// 	const bodyRect = document.body.getBoundingClientRect().top;
-		// 	const elementRect = element.getBoundingClientRect().top;
-		// 	const elementPosition = elementRect - bodyRect;
-		// 	const offsetPosition = elementPosition - offset;
-		// 	window.scrollTo({
-		// 		top: offsetPosition,
-		// 		behavior: 'smooth'
-		// 	});
-		// })
-	</script> 
+
     <?php wp_footer() ?>
 </body>
 </html>

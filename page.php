@@ -1,1 +1,6 @@
-<h1>PAGE CC</h1>
+<?php 
+    get_header();
+?>
+<?php the_content() ?>
+
+<?php get_footer()?>
