@@ -107,6 +107,29 @@ function generate_menu_html($menu_items, $el_ul) {
     return $html;
 }
 
+function generate_menu_mobile_html($menu_items, $el_ul) {
+    if($el_ul == true) {
+        $html = '<ul class="lnb">';
+    }else {
+        $html = '<ul class="lnb_sub">';
+    }
+    
+    foreach ($menu_items as $key => $item) {
+        $html .= '<li class="'.($key+1).'">';
+        $html .= '<a href="' . $item['url'] . '">' . $item['title'] . '</a>';
+        
+        if (!empty($item['children'])) {
+            $html .= generate_menu_mobile_html($item['children'], false);
+        }
+        
+        $html .= '</li>';
+    }
+    
+    $html .= '</ul>';
+    
+    return $html;
+}
+
 
 // Tao phan trang 
 if(!function_exists('landmark_pagination')) {
@@ -233,3 +256,8 @@ function landmark_style() {
     wp_enqueue_style('font-style');
 }
 add_action('wp_enqueue_scripts', 'landmark_style');
+
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyCE5xnTnMtDp3lDIUuM-nC2jrJ5z9JXSvA');
+}
+add_action('acf/init', 'my_acf_init');

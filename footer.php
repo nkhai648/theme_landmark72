@@ -1,15 +1,24 @@
+    <?php 
+        $page_id = 395;
+        $imageFooter = get_field('logo_footer', $page_id);
+        $footerMenu = get_field('list_footer_menu', $page_id);
+        $footerData = get_field('footer_data', $page_id);
+        // echo "<pre>";
+        // print_r($footerData);
+        // echo "</pre>";
+    ?>
     <div id="footer">
         <ul class="footer-menu-area">
-            <li><a href="#intro/sitemap2023">사이트맵</a></li>
-            <li><a href="#member/policy2023">개인정보보호정책</a></li>
-            <li><a href="#member/agree2023">이용약관</a></li>
-            <li><a href="#intro/location2023">교통편 안내</a></li>
+            <?php foreach ($footerMenu as $key => $value): ?>
+                <li><a href="#"><?=$value?></a></li>
+            <?php endforeach ?>
         </ul>
 
-        <h1><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/f_logo.png" alt="강남파이낸스센터" /></a></h1>
-        <address>Landmark72 Tower, Plot E6, Pham Hung Road, Cau Giay District, Hanoi, Vietnam<br>
-            Tel. +84 4 3772 3801~03 / Fax. +84 4 3772 3800 / E-mail. jonghasong@landmark72.com<br>
-            Copyright (c) 2023 by Keangnam Landmark 72 all right. reserved. Contact webmaster for more information.
+        <h1><a href="#"><img src="<?=$imageFooter['url']?>" alt="강남파이낸스센터" /></a></h1>
+        <address>
+            <?=$footerData['address']?> </br>
+            <?=$footerData['contact']?> </br>
+            <?=$footerData['copy_right']?>
         </address>
 
     </div>

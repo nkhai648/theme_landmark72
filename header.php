@@ -6,8 +6,15 @@
     
     $menu = get_menu_items_recursive($menuitems);
     $menu_html = generate_menu_html($menu, true);
+    $menu_mobile_html = generate_menu_mobile_html($menu, true);
+
+	//* CUSTOM HEADER 
+	$page_id = 410;
+	$logo = get_field('logo_header', $page_id);
+	$languages = get_field('languages', $page_id);
+	$top_menu_items = get_field('top_menu_mobile', $page_id);
     // echo "<pre>";
-    // print_r($menu);
+    // print_r($languages);
     // echo "</pre>";
 ?>
 <!DOCTYPE html>
@@ -31,7 +38,7 @@
 
 		<!-- PC gnb -->
 		<div id="headerWrap">
-			<h1><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="강남파이낸스센터 메인 바로가기" /></a></h1>
+			<h1><a href="#"><img src="<?=$logo['url']?>" alt="강남파이낸스센터 메인 바로가기" /></a></h1>
 
 			<div id="header">
                 <!--* Item MENU  -->
@@ -55,67 +62,12 @@
 						<div class="left_menu">
 
 							<ul class="m_topmenu clearfx">
-								<li><a href="#mall-main2023">MALL</a></li>
-								<li><a href="#location2023">LOCATION</a></li>
-								<li class="last"><a href="#eng/index.asp">ENGLISH</a></li>
+								<?php foreach ($top_menu_items as $key => $value) : ?>
+									<li><a href="#<?=$value?>"><?=$value?></a></li>
+								<?php endforeach?>
 							</ul>
-
-							<ul class="lnb">
-								<li class="lnb_menu01">
-									<a href="">Introduce</a>
-									<ul class="lnb_sub">
-										<li><a href="#intro2023">About</a></li>
-										<li><a href="#history2023">Vision</a></li>
-										<li><a href="#gallery2023">Location</a></li>
-									</ul>
-								</li>
-								
-								<li class="lnb_menu02">	                                    
-									<a>Floor Information</a>
-								</li>	
-
-								<li class="lnb_menu03">
-									<a href="">Facilities</a>
-									<ul class="lnb_sub">
-										<li><a href="#mall-main2023">Entertainment & Tours</a></li>
-										<li><a href="#enjoy/mallevent2023">Culture & Entertainment</a></li>
-										<li><a href="#mall/recom2023">Food & Baverage</a></li>
-										<li><a href="#mall/recom2023">Health & Gym</a></li>
-										<li><a href="#mall/recom2023">Education</a></li>
-										<li><a href="#mall/recom2023">Beauty & Shopping</a></li>
-										<li><a href="#mall/recom2023">Banking</a></li>
-										<li><a href="#mall/recom2023">Living Area</a></li>
-										<li><a href="#mall/recom2023">Office Area</a></li>
-										<li><a href="#mall/recom2023">Parking Area</a></li>
-									</ul>
-								</li>
-								<li class="lnb_menu04">
-									<a href="">Event</a>
-									<ul class="lnb_sub">
-										<li><a href="#community/bbs2023">Event</a></li>
-										<li><a href="#enjoy/event2023">News</a></li>
-									</ul>
-								</li>
-								<li class="lnb_menu05">
-									<a href="service/">Office</a>
-									<ul class="lnb_sub">
-										<li><a href="#community/bbs2023">Tenants</a></li>
-										<li><a href="#enjoy/event2023">Office Review</a></li>
-										<li><a href="#enjoy/event2023">Leasing Information</a></li>
-									</ul>
-								</li>
-								<li class="lnb_menu06">
-									<a href="#tenant/comlist2023">Retail Mall</a>
-								</li>
-								<li class="lnb_menu07">
-									<a href="#tenant/comlist2023">Tenant Conner</a>
-									<ul class="lnb_sub">
-										<li><a href="#tenant/information2023">Notice board</a></li>
-										<li><a href="#tenant/comlist2023">Inbox</a></li>
-										<li><a href="#tenant/comlist2023">Contact</a></li>
-									</ul>
-								</li>
-							</ul>
+							
+							<?=$menu_mobile_html?>
 						</div>
 						<!--// left_navi -->
 
@@ -127,10 +79,9 @@
 			</div>
 
 			<ul id="topLink">
-				<li><a href="#" class="">KOR</a></li>
-				<li><a href="#eng/" class="">ENG</a></li>
-				<li><a href="#eng/" class="">VIE</a></li>
-
+				<?php foreach ($languages as $key => $value) : ?>
+					<li><a href="#" class=""><?=$value?></a></li>
+				<?php endforeach ?>
 				<li><a href="#service/" class="login">로그인</a></li>
 
 			</ul>

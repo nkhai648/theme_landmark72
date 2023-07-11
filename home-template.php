@@ -3,18 +3,21 @@
 
 <?php 
 get_header(); 
-$tp_country = get_post_meta( $post->ID, 'slide_1', true );
 $slider = get_field('slider');
 
+//* DATA BUSINESS 
 $business = get_field('business');
-$content_business_1 = get_field('content_business');
+$content_business_1 = $business['content_column_1'];
+
+// DATA COL 2 BUSINESS
+$content_row_2 = $business['content_column_2'];
+$content_row_3 = $business['content_column_3'];
 
 $store = get_field('store');
 
 $mall = get_field('mall');
 
 $map = get_field('map');
-
 
 //* Page RedApple 
 $page_id = 322;
@@ -35,7 +38,7 @@ $imagesBook = get_field('page_images', $page_id);
 $descriptionPageBook = get_field('page_description', $page_id);
 
 echo "<pre>";
-
+// print_r($map);
 echo "</pre>";
 ?>
 
@@ -49,7 +52,7 @@ echo "</pre>";
     <ul class="bxslider7">
         <li>
             <div class="item">
-                <div class="main_img main-visual01" style="background: url('<?=$slider['slide_image_1']['url']?>') center center; background-size:cover; ">
+                <div class="main_img main-visual01" style="background: url('<?=$slider['slide_images'][0]['url']?>') center center; background-size:cover; ">
                     <div class="slide_txt slide_txt_1">
                         <h1><?=$slider['title_slider']?></h1>
                         <p><?=$slider['text_slider_1']?></p>
@@ -60,7 +63,7 @@ echo "</pre>";
 
         <li>
             <div class="item">
-                <div class="main_img main-visual02" style="background: url('<?=$slider['slide_image_2']['url']?>') center center; background-size:cover; ">
+                <div class="main_img main-visual02" style="background: url('<?=$slider['slide_images'][1]['url']?>') center center; background-size:cover; ">
                     <div class="slide_txt slide_txt_2">
                         <h1><?=$slider['title_slider']?></h1>
                         <p><?=$slider['text_slide_2']?></p>
@@ -71,7 +74,7 @@ echo "</pre>";
 
         <li>
             <div class="item">
-                <div class="main_img main-visual03" style="background: url('<?=$slider['slide_image_3']['url']?>') center center; background-size:cover; ">
+                <div class="main_img main-visual03" style="background: url('<?=$slider['slide_images'][2]['url']?>') center center; background-size:cover; ">
                     <div class="slide_txt slide_txt_3">
                         <h1><?=$slider['title_slider']?></h1>
                         <p><?=$slider['text_slide_3']?></p>
@@ -93,33 +96,29 @@ echo "</pre>";
 <?=$business['heading_business']?>
 
 <div class="con_box">
-    <div class="left" style="background: url('<?=$business['background_1']['url']?>')  no-repeat center; background-size: cover;">
+    <div class="left" style="background: url('<?=$business['business_images'][0]['url']?>')  no-repeat center; background-size: cover;">
         <a href="#intro2023">
-            <?=$business['content_business_1']?>
+            <?=$content_business_1?>
             <div class="go">바로가기</div>
         </a>
     </div>
     <div class="right">
         <ul>
             <li class="r01">
-                <span>LANDMARK 72 Office</span>
-                <p>LANDMARK 72 Office 소개</p>
-                <button type="button" class="btn btn-grey-thick">Mall보기</button>
+                <?=$content_row_2['row_1']?>
+                <button type="button" class="btn btn-grey-thick"><?=$content_row_2['button_row_1']?></button>
             </li>
-            <li class="r02"  style="background: url('<?=$business['background_location']['url']?>'); background-size: cover;">
-                <span class="c_white">LOCATION</span>
-                <p class="c_white">LANDMARK 72오시는길</p>
-                <button type="button" class="btn btn-blue">자세히 보기</button>
+            <li class="r02"  style="background: url('<?=$business['business_images'][1]['url']?>'); background-size: cover;">
+                <?=$content_row_3['row_1']?>
+                <button type="button" class="btn btn-blue"><?=$content_row_3['button_row_1']?></button>
             </li>
-            <li class="r03"  style="background: url('<?=$business['background_history_award']['url']?>'); background-size: cover;">
-                <span class="c_white">HISTORY & AWARD</span>
-                <p class="c_white">연혁 및 수상경력</p>
-                <button type="button" class="btn btn-blue">자세히 보기</button>
+            <li class="r03"  style="background: url('<?=$business['business_images'][2]['url']?>'); background-size: cover;">
+                <?=$content_row_2['row_2']?>
+                <button type="button" class="btn btn-blue"><?=$content_row_2['button_row_2']?></button>
             </li>
             <li class="r04">
-                <span>TENANT SERVICE</span>
-                <p>임차인 전용사이트</p>
-                <button type="button" class="btn btn-grey-thick">바로가기</button>
+                <?=$content_row_3['row_2']?>
+                <button type="button" class="btn btn-grey-thick"><?=$content_row_3['button_row_2']?></button>
             </li>
         </ul>
     </div>
