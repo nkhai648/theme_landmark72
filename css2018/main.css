@@ -324,6 +324,11 @@ line-height: 0;
 
 .main-visual-cover .ico_more{position: absolute; bottom:100px; left:50%; width:50px; height: 75px; display: block; margin-left:-25px; z-index:3;background:url('../img/ico_more.png'); }
 
+.new-item {
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap;
+}
 
 @media (min-width:230px) and (max-width:799px) {
 .main-visual-cover{position:relative;height:auto; min-height:500px;width:100%; display: block; overflow: hidden; 
@@ -413,6 +418,9 @@ line-height: 0;
 .main_con1 .con_box .right li.r02{background: url('../img/main02_bg2.jpg'); background-size: cover;}
 .main_con1 .con_box .right li.r03{background: url('../img/main02_bg3.jpg'); background-size: cover;}
 .main_con1 .con_box .right li.r04{background: #f0f0f0;}
+.new-item {
+  gap: 0 15px
+}
 
 }
 

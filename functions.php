@@ -186,7 +186,7 @@ if(!function_exists('landmark_entry_meta')) {
                             __('Leave a comment', 'landmark'),
                             __('One comment', 'landmark'),
                             __('% comments', 'landmark'),
-                            __('Read all comments', 'landmark'),
+                            __('Read all comments', 'landmark')
                         );
                         echo '</span>';
                     endif;

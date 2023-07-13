@@ -38,7 +38,7 @@ $imagesBook = get_field('page_images', $page_id);
 $descriptionPageBook = get_field('page_description', $page_id);
 
 echo "<pre>";
-// print_r($map);
+// print_r($descriptionPageBook);
 echo "</pre>";
 ?>
 
@@ -55,7 +55,7 @@ echo "</pre>";
                 <div class="main_img main-visual01" style="background: url('<?=$slider['slide_images'][0]['url']?>') center center; background-size:cover; ">
                     <div class="slide_txt slide_txt_1">
                         <h1><?=$slider['title_slider']?></h1>
-                        <p><?=$slider['text_slider_1']?></p>
+                        <p id="txt_slide_1"><?=$slider['text_slider_1']?></p>
                     </div>
                 </div>
             </div>
